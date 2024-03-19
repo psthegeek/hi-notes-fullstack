@@ -24,7 +24,7 @@ const Login = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    axios.post('http://localhost:8000/api/auth/login', { email, password })
+    axios.post('https://mern-note-assignment.onrender.com/api/auth/login', { email, password })
       .then(response => {
         console.log('Login successful:', response.data);
         setCredentials({email,password})

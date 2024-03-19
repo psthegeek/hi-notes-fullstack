@@ -15,7 +15,7 @@ export default function Signup() {
 
   const handleSignup = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:8000/api/auth/register', { email, password })
+    axios.post('https://mern-note-assignment.onrender.com/api/auth/register', { email, password })
       .then(response => {
         console.log('Registration successful:', response.data);
         setCredentials({email,password})
